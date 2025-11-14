@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Byte Academy - Inloggen</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar is-light p-4">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-bold is-size-5">Byte Academy</a>
+      <a role="button" class="navbar-burger" data-target="navMenu">
+        <span></span><span></span><span></span>
+      </a>
+    </div>
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="studentofcoach.html">Home</a>
+        <a class="navbar-item">Studenten</a>
+        <a class="navbar-item">Events</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="button is-primary"><strong>Sign up</strong></a>
+          <a class="button is-light">Log in</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login -->
+  <section class="section">
+    <div class="container has-text-centered">
+      <h1 class="title mb-5">Inloggen</h1>
+      <div class="box has-background-link-light column is-centered">
+        <form action="Coach.html">
+          <input class="input mb-3" type="email" placeholder="E-mailadres" >
+          <input class="input mb-4" type="password" placeholder="Wachtwoord" >
+          <button class="button is-link is-fullwidth mb-3"><a target="_blank" href="Coach.html"></a>inloggen</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<!--reclame-->
+<section>
+    <div class="container has-text-centered">
+        <div class="box has-background-link-light column is centered">
+            <h1>Haal nu de nieuwe raffox plushie!!!</h1>
+            <img class="image is-128x128 is-inline-block" src="raffoxy.webp">
+        </div>
+    </div>
+</section>
+
+  <!-- Foeten -->
+  <footer class="footer has-text-centered">
+    <p><strong>Byte Academy</strong> — Medemogelijk gemaakt door RaffoxyGames</p>
+  </footer>
+
+  <!-- baby js -->
+  <script>
+    document.querySelector('.navbar-burger').onclick = () =>
+      document.getElementById('navMenu').classList.toggle('is-active');
+  </script>
+</body>
+</html>

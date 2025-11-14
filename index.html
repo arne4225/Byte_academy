@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Byte Academy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar is-light p-4" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold is-size-5">Byte Academy</a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                
+                <a class="navbar-item">Home</a>
+                <a class="navbar-item">Studenten</a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Meer</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">Emergency Ties</a>
+                        <a class="navbar-item">Khaby Lame</a>
+                        <a class="navbar-item">Sigma Slicers</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">Bomboclat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary"><strong>Sign up</strong></a>
+                        <a target="_blank" href="aanmelden.html" class="button is-light">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered mb-5">Dagdoelen</h1>
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <div class="box has-background-success-light">
+                        <p class="has-text-weight-bold mb-2">Vul je dagdoel in:</p>
+                        <input class="input" type="text" placeholder="Bijv. HTML leren">
+                        <button class="button is-link mt-3">sturen</button>
+                    </div>
+                </div>
+                <div class="column has-text-centered">
+                    <div class="box has-background-success-light">
+                        <p class="has-text-weight-bold mb-2">Vandaag gepland:</p>
+                        <p>• Project afmaken<br>• Studeren<br>• Even pauze nemen ☕</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- second container -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered mb-5">events/random</h1>
+            <div class="box has-background-success-light has-text-centered mb-5">
+                <h2 class="has-text-weight-bold mb-2">Satoru Gojo</h2>
+                <img src="gojo.webp" alt="Satoru Gojo">
+            </div>
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <div class="box has-background-success-light">
+                        <h2 class="has-text-weight-bold mb-2">Sponsor</h2>
+                        <img class="image is-128x128 is-inline-block" src="raffoxy.png" alt="Sponsor logo">
+                    </div>
+                </div>
+                <div class="column has-text-centered">
+                    <div class="box has-background-success-light">
+                        <p class="has-text-weight-bold mb-2">Aankomende events:</p>
+                        <p>• Deep dive 2<br>• Frituur vrijdag<br>• Horeca woensdag<br>• smootie dinsdag</p>
+                        <p><strong>al wil je jouw events hier ook zien contact don jouw lokaale coach</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- foeten -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <h3>byte academy</h3>
+            <p><strong>Medemogelijk gemaakt door RaffoxyGames</strong></p>
+        </div>
+    </footer>
+    <!--baby js-->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById('navbarBasicExample');
+
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+
+</html>
